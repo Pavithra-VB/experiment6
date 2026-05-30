@@ -30,7 +30,7 @@ jobs:
   deploy:
     needs: build-test
     runs-on: ubuntu-latest
-if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy Application
         run: echo "Deploying application..."
